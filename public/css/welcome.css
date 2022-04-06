@@ -1,0 +1,133 @@
+:root{
+    --primary:#036159;
+    --primary_l:#03615975;
+    --secondary:#d6d6d6;
+    --secondary_l:#d6d6d650;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Comfortaa', cursive;
+}
+.container{
+    width: 94%;
+    margin: 0 auto;
+
+}
+.navbar-light .navbar-brand {
+    color: var(--primary);
+}
+.head_text{
+    font-size: 1.2rem;
+}
+.user_name{
+    font-weight: bold;
+    color:var(--primary);
+    width:15%   
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+.user_welcome{
+    width: 65%;
+    color: var(--secondary);
+    margin: 0 4rem;
+}
+.user_icons{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end; 
+}
+.user_icons div{
+   margin: 0 8px;
+   cursor: pointer;
+}
+.user_icons div i{
+    font-size: 1.4rem;
+    color: var(--secondary);
+ }
+ .user_icons div img{
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+ }
+.und{
+    padding: 0.6rem 0;
+    border-bottom: 2px solid var(--secondary);
+}
+main{
+    display: flex;
+    margin: 2rem 0;
+}
+.side_bar{
+    width: 20%;
+}
+.balance{
+    width: 20%;
+}
+.balance a {
+    text-decoration: none;
+}
+.contents{
+    width: 60%;
+    margin-right: 4rem;
+}
+.dashboard .d_cont ul li{
+    list-style-type: none;
+    padding: 1rem 0;
+    color: var(--secondary);
+
+}
+.dashboard .d_cont ul li a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 0.8rem;
+    padding-left: 12px;
+    transition: all 500ms linear;
+}
+.dashboard .d_cont ul li a:hover{
+   
+    font-weight: bold;
+    color: var(--primary_l);
+  
+}
+.dashboard .d_cont ul .selected{
+    color: var(--primary);
+    font-weight: bold;
+}
+.tl_bal{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary_l);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding:4rem 2rem;
+    border-radius: 0.8rem;
+}
+.tl_bal_2{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary_l);
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    padding:4rem 2rem;
+    border-radius: 0.8rem;
+    margin-top: 20px;
+}
+.tl_bal .price, .tl_bal_2 .price{
+    font-size: 2.5rem;
+}
+.tl_bal .name, .tl_bal_2 .name{
+    margin-top: 1rem;
+}
+
+.contents .detail{
+    box-shadow: 0 0 16px var(--secondary_l); 
+    padding: 2rem 2rem;
+}

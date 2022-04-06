@@ -1,0 +1,62 @@
+.contents .detail .title{
+    font-size: 1.6rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+.quick_access{
+    margin-top: 2rem;
+}
+.quick_access .qkacs, .main_tan .mts{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    color: var(--secondary);
+}
+.qkacs_con{
+    margin-top: 1rem;
+}
+.qkacs_blk{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 2px;
+}
+.qkacs_blk a{
+   text-decoration: none;
+}
+
+.qkacs_blk .quick_link{
+    padding: 2rem;
+    box-shadow: 0 0 24px var(--secondary_l);
+    height: 20vh;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   transition: all 700ms ease-in-out;
+}
+.qkacs_blk .quick_link:hover{
+   background-color: var(--secondary_l);
+}
+
+.qkacs_blk .quick_link .ql_icon{
+    font-size: 3rem;
+    color: var(--primary);
+}
+.qkacs_blk .quick_link .ql_title{
+    font-size: 1rem;
+    margin-top: 8px;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.main_tan{
+    margin-top: 2.5rem;
+}
+
+.mts_table table{
+    width: 100%;
+    margin-top: 2rem;   
+}
+
