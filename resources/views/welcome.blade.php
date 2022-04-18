@@ -17,6 +17,9 @@
 <body>
     <div class="container">
         <nav class="nav">
+            <div class="hambu" onclick="showMenu()">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
             <div class="user_name und">
                 <span class="head_text">
                     Chylau ketem
@@ -34,25 +37,38 @@
                 <div>
                     <a href="http://"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
                 </div>
-                <div>
+                <div class="p_img_c">
                     <img src="https://images.unsplash.com/photo-1580250864656-cd501faa9c76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNjk3MDJ8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="" srcset="">
+                        alt="" srcset="" onclick="fadeImg()">
+                        <div class="profile_menu" id="img1" style="display: none">
+                            <div class="pm_l">
+                                <ul>
+                                    <li><a href="{{route('profile')}}">My Account</a></li>
+                                    <li><a href="{{route('reset')}}">Change Password</a></li>
+                                    <li><a href="">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
                 </div>
             </div>
         </nav>
 
         <main>
-            <div class="side_bar">
+            <div class="side_bar" id="side">
                 <div class="dashboard">
+                    <div class="cancel" onclick="removeSide()">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
                     <div class="d_cont">
                         <ul>
-                            <li class="selected"><i class="fa fa-tachometer" aria-hidden="true"></i><a href="" class="selected">Dashboard</a></li>
-                            <li><i class="fa fa-money" aria-hidden="true"></i><a href="">Make Transfer</a></li>
-                            <li><i class="fa fa-history" aria-hidden="true"></i><a href="">Transfer History</a></li>
-                            <li><i class="fa fa-credit-card" aria-hidden="true"></i><a href="">Transaction History</a>
+                            <li class="selected"><i class="fa fa-tachometer" aria-hidden="true"></i><a href="{{route('dashboard')}}" class="selected">Dashboard</a></li>
+                            <li><i class="fa fa-money" aria-hidden="true"></i><a href="{{route('transfer')}}">Make Transfer</a></li>
+                            <li><i class="fa fa-history" aria-hidden="true"></i><a href="{{route('history')}}">Transfer History</a></li>
+                            <li><i class="fa fa-credit-card" aria-hidden="true"></i><a href="{{route('summary')}}">Transaction History</a>
                             </li>
-                            <li><i class="fa fa-male" aria-hidden="true"></i><a href="">My Profile</a></li>
-                            <li><i class="fa fa-key" aria-hidden="true"></i><a href="">Change Password</a></li>
+                            <li><i class="fa fa-male" aria-hidden="true"></i><a href="{{route('profile')}}">My Profile</a></li>
+                            <li><i class="fa fa-key" aria-hidden="true"></i><a href="{{route('reset')}}">Change Password</a></li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -91,7 +107,19 @@
     </div>
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" type="text/javascript"></script>
+    <script>
+        function fadeImg(){
+           $('#img1').fadeToggle(1000)
+        }
 
+        function showMenu(){
+            $('#side').animate({left:5})
+        }
+        function removeSide(){
+            $('#side').animate({left:-1000})
+        }
+        </script>
 </body>
 
 </html>

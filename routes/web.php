@@ -15,4 +15,28 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('dashboard');
-});
+})->name('dashboard');
+
+Route::get('/transfer', function () {
+    return view('transfer');
+})->name('transfer');
+
+Route::get('/history', function () {
+    return view('history');
+})->name('history');
+
+Route::get('/summary', function () {
+    return view('summary');
+})->name('summary');
+
+Route::get('/profile', function () {
+    return view('profile');
+})->name('profile');
+
+Route::get('/update', function () {
+    return view('update');
+})->name('update');
+
+Route::get('/reset', function () {
+    return view('password');
+})->name('reset');

@@ -3,6 +3,7 @@
     <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
 @endsection
 @section('content')
+    
     <div class="title">
         <span>Dashboard</span>
     </div>
@@ -79,20 +80,60 @@
         <div class="mts">
             <span>Transaction History</span>
         </div>
-        <div class="mts_table">
-            <table>
-                <thead>
-                    <tr>
-                    <th>Date</th>
-                    <th>Amount</th>
-                    <th>Account Accredited</th>
-                    <th>Bank</th>
-                    <th>Description</th>
-                    <th>Status</th>
-                    </tr>
-                    
-                </thead>
+        <div class="mts_table" style="overflow-x:auto;" >
+            <table >
+                    <thead class="tab_row">
+                        <tr >
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Account Accredited</th>
+                        <th>Bank</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2022-04-04 15:16:30</td>
+                            <td>3950</td>
+                            <td>FI35 5780 0720 5263 62 - Anna Turko</td>
+                            <td>OP bank</td>
+                            <td>Savings</td>
+                            <td>Successful</td>
+                        </tr>
+                        <tr>
+                            <td>2022-04-04 15:16:30</td>
+                            <td>3950</td>
+                            <td>FI35 562 - Anna Turko</td>
+                            <td>Ojjs bank</td>
+                            <td>Savings</td>
+                            <td>Successful</td>
+                        </tr>
+                    </tbody>
             </table>
+        </div>
+    </div>
+    <div class="acc_info">
+        <div class="acis">
+            <span>Account Information</span>
+        </div>
+        <div class="acc_dtl">
+            <div class="acc_name dtl">
+                <span class="osi">Account Name</span>
+                <span>Chylau Ketem</span>
+            </div>
+            <div class="acc_acn dtl">
+                <span>Account Number</span>
+                <span>0089678790</span>
+            </div>
+            <div class="acc_ocup dtl">
+                <Span>Occupation</Span>
+                <span>Sailor</span>
+            </div>
+            <div class="acc_dob dtl">
+                <span>Date of Birth</span>
+                <span>05/08/1980</span>
+            </div>
         </div>
     </div>
 @endsection

@@ -1,0 +1,48 @@
+.tr_inputs{
+    margin-top: 4rem;
+}
+.td_input{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.td_input label{
+    font-weight: bold;
+    color: var(--primary_l);
+}
+.td_input input{
+    margin-top: 0.8rem;
+    padding: 0.8rem 0.6rem;
+    font-size: 1rem;
+    color: var(--primary);
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    outline-color: var(--primary_l);
+}
+.td_input textarea{
+    margin-top: 0.8rem;
+    padding: 0.8rem 0.6rem;
+    font-size: 1rem;
+    color: var(--primary);
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    outline-color: var(--primary_l);
+}
+.tr_btn{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tr_btn a{
+   padding: 16px;
+   font-size: 0.8rem;
+   background-color: var(--primary_l);
+   color: white;
+   text-decoration: none;
+   border-radius: 10px;
+   transition: all 700ms ease-in;
+}
+.tr_btn a:hover{
+   background-color: var(--primary);
+ }

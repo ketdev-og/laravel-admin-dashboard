@@ -6,12 +6,15 @@
 .quick_access{
     margin-top: 2rem;
 }
-.quick_access .qkacs, .main_tan .mts{
+.quick_access .qkacs, .main_tan .mts, .acis{
     width: 100%;
     display: flex;
     justify-content: flex-end;
     font-size: 0.8rem;
     color: var(--secondary);
+}
+.acis{
+    margin: 1rem 0;
 }
 .qkacs_con{
     margin-top: 1rem;
@@ -45,18 +48,88 @@
     color: var(--primary);
 }
 .qkacs_blk .quick_link .ql_title{
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 8px;
     color: var(--secondary);
     font-weight: bold;
 }
 
-.main_tan{
+.main_tan, .acc_info{
     margin-top: 2.5rem;
 }
 
 .mts_table table{
     width: 100%;
-    margin-top: 2rem;   
+    margin-top: 1rem;
+    border-spacing: 0px;
+       
+}
+.mts_table{
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--secondary_l);  
+}
+.mts_table::-webkit-scrollbar{
+    width: 1em;
+}
+.mts_table::-webkit-scrollbar-track {
+    background-color: var(--secondary);
+  }
+   
+  .mts_table::-webkit-scrollbar-thumb {
+   background-color: var(--primary);
+  }
+
+.mts_table thead tr th, tbody tr td{
+    color: white;
+    padding: 0.8rem;
+    font-size: 0.8rem;  
+}
+.mts_table tbody tr td{
+    color: var(--primary);
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    background-color: var(--secondary_l); 
+    font-weight: bold; 
+}
+
+.tab_row{
+    background-color: var(--primary);
+}
+
+.acc_info .acc_dtl .dtl span:first-child{
+    background-color: var(--secondary_l);
+    padding: 1rem;
+    width: 30%;
+    text-align: center;
+    color: var(--primary);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.acc_info .acc_dtl .dtl span:nth-child(2){
+    padding: 1rem;
+    color: var(--secondary);
+    font-weight: bolder;
+}
+.acc_info .acc_dtl .dtl {
+   margin: 0.2rem 0;
+    width: 100%;
+    display: flex;
+    
+}
+
+@media only screen and (max-width: 673px) {
+    .qkacs_blk {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .acc_info .acc_dtl .dtl span:first-child {
+       font-size: 0.8rem;
+    }
+    .acc_info .acc_dtl .dtl span:nth-child(2) {
+        font-size: 0.8rem;
+    }
+   
 }
 

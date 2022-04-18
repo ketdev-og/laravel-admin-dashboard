@@ -1,133 +1,339 @@
-:root{
-    --primary:#036159;
-    --primary_l:#03615975;
-    --secondary:#d6d6d6;
-    --secondary_l:#d6d6d650;
+:root {
+    --primary: #036159;
+    --primary_l: #03615975;
+    --secondary: #8d8b8b;
+    --secondary_l: #d6d6d650;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
-body{
-    font-family: 'Comfortaa', cursive;
+
+body {
+    font-family: 'Comfortaa', Verdana, Geneva, Tahoma, sans-serif;
 }
-.container{
+
+.container {
     width: 94%;
     margin: 0 auto;
 
 }
+
 .navbar-light .navbar-brand {
     color: var(--primary);
 }
-.head_text{
+
+.head_text {
     font-size: 1.2rem;
 }
-.user_name{
+
+.user_name {
     font-weight: bold;
-    color:var(--primary);
-    width:15%   
+    color: var(--primary);
+    width: 15%
 }
-.nav{
+
+.nav {
     display: flex;
     flex-direction: row;
-    
+
 }
-.user_welcome{
+
+.user_welcome {
     width: 65%;
     color: var(--secondary);
     margin: 0 4rem;
 }
-.user_icons{
+
+.user_icons {
     width: 20%;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
-.user_icons div{
-   margin: 0 8px;
-   cursor: pointer;
+
+.user_icons div {
+    margin: 0 8px;
+    cursor: pointer;
 }
-.user_icons div i{
+
+.user_icons div i {
     font-size: 1.4rem;
     color: var(--secondary);
- }
- .user_icons div img{
+}
+
+.user_icons div img {
     width: 1.4rem;
     height: 1.4rem;
     border-radius: 50%;
- }
-.und{
+}
+
+.p_img_c {
+    position: relative;
+}
+
+.und {
     padding: 0.6rem 0;
     border-bottom: 2px solid var(--secondary);
 }
-main{
+
+main {
     display: flex;
     margin: 2rem 0;
 }
-.side_bar{
+
+.side_bar {
     width: 20%;
 }
-.balance{
+
+.balance {
     width: 20%;
 }
+
 .balance a {
     text-decoration: none;
 }
-.contents{
+
+.contents {
     width: 60%;
     margin-right: 4rem;
 }
-.dashboard .d_cont ul li{
+
+.dashboard .d_cont ul li {
     list-style-type: none;
     padding: 1rem 0;
     color: var(--secondary);
 
 }
-.dashboard .d_cont ul li a{
+
+.dashboard .d_cont ul li a {
     text-decoration: none;
     color: var(--secondary);
     font-size: 0.8rem;
     padding-left: 12px;
     transition: all 500ms linear;
 }
-.dashboard .d_cont ul li a:hover{
-   
+
+.dashboard .d_cont ul li a:hover {
+
     font-weight: bold;
     color: var(--primary_l);
-  
+
 }
-.dashboard .d_cont ul .selected{
+
+.dashboard .d_cont ul .selected {
     color: var(--primary);
     font-weight: bold;
 }
-.tl_bal{
+
+.tl_bal {
     display: flex;
     flex-direction: column;
     background-color: var(--primary_l);
     justify-content: center;
     align-items: center;
     color: white;
-    padding:4rem 2rem;
+    padding: 4rem 2rem;
     border-radius: 0.8rem;
 }
-.tl_bal_2{
+
+.tl_bal_2 {
     display: flex;
     flex-direction: column;
     background-color: var(--secondary_l);
     justify-content: center;
     align-items: center;
     color: var(--primary);
-    padding:4rem 2rem;
+    padding: 4rem 2rem;
     border-radius: 0.8rem;
     margin-top: 20px;
 }
-.tl_bal .price, .tl_bal_2 .price{
+
+.tl_bal .price,
+.tl_bal_2 .price {
     font-size: 2.5rem;
 }
-.tl_bal .name, .tl_bal_2 .name{
+
+.tl_bal .name,
+.tl_bal_2 .name {
     margin-top: 1rem;
 }
 
-.contents .detail{
-    box-shadow: 0 0 16px var(--secondary_l); 
+.contents .detail {
+    box-shadow: 0 0 16px var(--secondary_l);
     padding: 2rem 2rem;
+}
+
+.profile_menu {
+    position: absolute;
+    padding: 1rem 0;
+    right: 0;
+    top: 40px;
+    width: 200px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    box-shadow: 0 0 16px var(--primary_l);
+
+}
+
+.profile_menu .pm_l ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.profile_menu .pm_l ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    display: block;
+    padding: 1rem 0;
+    transition: all 700ms ease-in;
+}
+
+.profile_menu .pm_l ul li:hover {
+    background-color: var(--secondary_l);
+}
+
+.cancel{
+    display: none;
+}
+
+.hambu{
+    display: none;
+}
+
+@media only screen and (max-width: 1059px) {
+    nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav .user_name,
+    nav .user_welcome {
+        display: none;
+    }
+
+    nav .hambu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        color: var(--primary);
+    }
+
+    .und {
+        border: none;
+    }
+
+    .side_bar {
+        position: absolute;
+        top: 1%;
+        left: -100%;
+        height: 80vh;
+        width: 220px;
+        overflow-y: auto;
+        background-color: var(--primary);
+        padding: 1rem 2rem;
+        border-radius: 5px;
+    }
+
+    .cancel{
+        color: var(--secondary);
+        font-size: 2rem;
+        display: flex;
+        justify-content: flex-end; 
+    }
+
+    .dashboard .d_cont ul li a {
+        color: white;
+        font-size: 1rem; 
+    }
+    .dashboard .d_cont ul li {
+        margin: 1rem 0;
+    }
+
+    .dashboard .d_cont ul .selected {
+        color: white;
+        font-weight: bold;
+    }
+
+    .contents {
+        width: 75%;
+        margin-right: 0;
+    }
+
+    .balance {
+        width: 25%;
+        margin-left: 1rem;
+    }
+
+    .tl_bal .name,
+    .tl_bal_2 .name {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 795px) {
+    main {
+        flex-direction: column-reverse;
+    }
+
+    .contents {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .balance {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tl_bal_2 {
+        margin-top: 0;
+    }
+
+    .tl_bal {
+        margin-right: 2rem;
+    }
+  
+
+}
+
+@media only screen and (max-width: 673px) {
+    .balance {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .balance a {
+        display: block;
+        width: 100%;
+
+    }
+
+    .tl_bal_2 {
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+
+    .tl_bal,
+    .tl_bal_2 {
+        padding: 1rem 0;
+        flex-direction: row-reverse;
+        margin-right: 0;
+    }
+
+    .tl_bal .price,
+    .tl_bal_2 .price {
+        padding: 0 1rem;
+    }
+
+    .qkacs_blk {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
