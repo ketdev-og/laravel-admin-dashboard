@@ -1,0 +1,218 @@
+body												{margin: 0;
+													padding: 0;}
+
+
+html												{scroll-behavior: smooth;}
+
+
+::placeholder										{color: #581C20;
+													font-family: sans-serif;
+													font-weight: bold;}
+
+/*Styling of The Wrapper*/
+.wrapper  											{background-image: url('other/slider1.jpg');
+													width: 100%;
+													height: 100vh;
+													background-repeat: no-repeat;
+													background-size: cover;
+													display: flex;
+													justify-content: center;
+													align-items: center;
+													padding-top: 6%;
+													padding-bottom: 10%;}
+
+
+/*End of Wrapper*/
+
+
+
+/*Start of Login_Content*/
+.wrapper .login_content								{width: 90%;
+													background: ;
+													display: flex;
+													background: ;
+													justify-content: center;
+													align-items: center;
+													flex-direction: column;
+													margin-left: auto;
+													margin-right: auto;}
+
+
+.login_content .login_main							{width: 90%;
+													margin-left: 10%;}
+
+
+
+.login_content .login_main label					{font-family: sans-serif;
+													font-weight: bold;
+													color: #581C20;
+													margin-right: 10%;
+													font-size: 0.95rem;}
+
+
+/*Borrowed from Desktop View*/
+
+.login_main 		select							{-webkit-appearance: none;
+													-moz-appearance: none;
+													-ms-appearance: none;
+													appearance: none;
+													outline: 0;
+													box-shadow: none;
+													background: white;
+													border: none;
+													height: 35px;
+													width: 90%;
+													border-radius: 5px;
+													color: #581C20;
+													padding-left: 2%;
+													margin-top: 2%;}
+
+
+.pagenumber											{width: 100%;
+													display: flex;
+													justify-content: center;
+													align-items: center;
+													margin-top: 5%;
+													margin-left: -6%;}
+
+
+.login_main .buttons								{margin-top: 5%;
+													width: 100%;
+													height: 30px;
+													display: grid;
+													grid-template-columns: repeat(8, 1fr);
+													margin-left: -6%;}
+
+/*End of Borrowed*/
+
+
+
+#submit_me											{width: 120px;
+													transition: 0.5s; background: #5A282A;
+													transition: 0.5s; color: white;
+													height: 40px;
+													font-family: sans-serif;
+													font-weight: bold;
+													border: none;
+													display: flex;
+													justify-content: center;
+													align-items: center;
+													padding-top: 10px;
+													padding-bottom: 10px;
+													cursor: pointer;
+													margin-top: 10%;}
+
+
+#submit_me:hover									{transition: 0.5s; background: white;
+													transition: 0.5s; color: #581C20;}
+
+
+.login_content .login_main input					{height: 35px;
+													width: 85%;
+													margin-top: 2%;
+													border: none;
+													border-radius: 5px;
+													color: #581C20;
+													font-weight: bold;
+													font-family: sans-serif;
+													padding-left: 2%;}
+
+
+
+.login_content .login_main input:focus				{outline: none;}
+
+
+.login_main	.form1:not(:last-child)					{margin-top: 6%;}
+
+
+.form1 												{display: flex;
+													flex-direction: column;}
+
+
+/*End of Login Content*/
+
+
+
+.login_main1 										{height: ;
+													width: 100%;
+													background: white;
+													border-radius: 10px;
+													padding-top: 15px;
+													padding-bottom: 15px;
+													padding-left: 15px;
+													padding-right: 15px;
+													margin-top: 5%;
+													margin-left: -10%;}
+
+
+.login_main .create_acount							{display: flex;
+													width: 100%;}
+
+
+.create_acount										{}
+
+
+.create_acount p 									{font-family: sans-serif;
+													color: #696C68;
+													font-weight: bold;
+													font-size: 0.95rem;
+													display: flex;
+													justify-content: center;
+													align-items: center;}
+
+
+.create_acount p a 									{text-decoration: none;
+													transition: 0.5s;color: #5A282A;
+													font-size: 1rem;
+													display: flex;
+													font-weight: lighter;
+													justify-content: center;
+													align-items: center;
+													height: 30px;
+													width: 230px;
+													transition: 0.5s;background: white;
+													border: 1px solid #5A282A;
+													border-radius: 5px;}
+
+
+.create_acount p a:hover							{transition: 0.5s;background: #5A282A;
+													transition: 0.5s; color: white;}
+
+/*Start of Forgot Password*/
+.forgot_password 									{display: flex;
+													flex-direction: column;}
+
+.forgot_password p 									{margin-top: 0;
+													color: #696C68;
+													font-family: sans-serif;
+													font-size: 0.95rem;}
+
+
+.forgot_password ul 								{margin-top: 0;}
+
+.forgot_password ul li 								{color: #696C68;
+													font-family: sans-serif;
+													font-size: 0.95rem;}
+
+
+.forgot_password small:not(:last-child)				{margin-top: -2%;}
+
+.forgot_password small								{color: #696C68;
+													font-family: sans-serif;}
+
+
+.forgot_password a  								{text-decoration: none;
+													color: #5A282A;}
+
+
+/*Styling of Footer*/
+.footer 											{height: 60px;
+													width: 100%;
+													display: flex;
+													background: #5A282A;
+													justify-content: center;
+													align-items: center;}
+
+
+.footer p 											{font-family: sans-serif;
+													color: white;}

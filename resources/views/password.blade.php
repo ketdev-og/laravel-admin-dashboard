@@ -11,15 +11,15 @@
         <div class="tr_inputs">
             <div class="td_input">
                 <label for="">Old Password</label>
-                <input type="text" name="" id="" placeholder="name123@gmail.com">
+                <input type="text" name="" id="" placeholder="********">
             </div>
             <div class="td_input">
                 <label for="">New Password</label>
-                <input type="text" name="" id="" placeholder="+10234567">
+                <input type="text" name="" id="" placeholder="*********">
             </div>
             <div class="td_input">
                 <label for="">Verify New Password</label>
-                <input type="text" name="" id="" placeholder="Malta m Atalanta USA">
+                <input type="text" name="" id="" placeholder="********">
             </div>
             
         </div>

@@ -1,0 +1,421 @@
+body    											{width: auto;
+													margin: 0;}
+
+
+/*Styling of Header Starts Here*/
+
+.wrapper .head_wrapper								{margin-left: auto;
+													margin-right: auto;
+													width: 98%;
+													box-shadow: 0 0 13px 7px #95583D;
+													box-sizing: border-box;}
+
+.header .top_nav1									{display: none;}
+
+
+
+.head_wrapper .header .header_background			{height:80px;}
+
+
+.header .top_nav2 									{display: grid;
+													grid-template-columns: 70% 30%;
+													align-items: center;
+													grid-gap: ;}
+
+
+.top_nav2 .logo    									{height: 80px;}
+
+.top_nav2 .logo   img 								{transition: 0.3s;width: 150px;
+													transition: 0.3s;height: 60px;
+													transition: 0.3s;margin-left: 10%;
+													transition: 0.3s;margin-top: 3%;}	
+
+.top_nav2 .logo   img:hover							{transition: 0.3s; width: 153px;
+													transition: 0.3s;height: 63px;
+													transition: 0.3s;margin-left: 9%;
+													transition: 0.3s;margin-top: 2.5%;}
+
+
+.top_nav2 .navigation   							{display: none;}
+
+
+.top_nav2 .mobile_navigation						{display: flex;
+													height: 80px;
+													margin-left: -50%;}
+
+
+.mobile_navigation .mobile_login					{margin-top: 10%;}
+
+
+
+.mobile_navigation .mobile_login button				{width: 100px;
+													height: 40px;
+													transition: 0.5s; background: rgba(88, 28, 32, .6);
+													border: 2px solid white;
+													color: white;
+													font-family: sans-serif;
+													font-weight:;
+													font-size: .9rem;
+													cursor: pointer;}
+
+.mobile_navigation .mobile_login button:hover     	{transition: 0.5s; background: rgba(255, 255, 255, .2);}
+
+
+
+.mobile_navigation .mobile_menu_icon				{margin-top: 6%;
+													display: flex;
+													margin-left:;
+													cursor: pointer;
+													margin-left: 8%;}
+
+
+.mobile_navigation .mobile_menu_icon section		{font-weight: bold;
+													font-size: 3rem;
+													color: white;
+													}
+
+
+.mobile_menu_icon .enter 							{display: none;}
+
+
+.mobile_menu_icon .drop								{}
+
+
+#mobile_menu_nav									{transition: 0.5s; height: 0px;
+													overflow: hidden;
+													width: 100%;}
+
+.personal1											{transition: 0.5s; height: 0px;
+													overflow: hidden;
+													width: 100%;}
+
+
+.persona .personal1									{display: flex;
+													flex-direction: column;}
+
+
+
+.business1											{transition: 0.5s; height: 0px;
+													overflow: hidden;
+													width: 100%;}
+
+
+.business	.business1								{display: flex;
+													flex-direction: column;}
+
+
+
+.electronic_banking1								{transition: 0.5s; height: 0px;
+													overflow: hidden;
+													width: 100%;}
+
+
+.electronic_banking .electronic_banking1			{display: flex;
+													flex-direction: column;}
+
+
+.online_banking1									{transition: 0.5s; height: 0px;
+													overflow: hidden;
+													width: 100%;}
+
+
+
+.online_banking .online_banking1					{display: flex;
+													flex-direction: column;}
+
+
+.about_us1											{transition: 0.5s; height: 0px;
+													overflow: hidden;
+													width: 100%;}
+
+
+.about_us .about_us1								{display: flex;
+													flex-direction: column;}
+
+
+.mobile_menu_nav .mobile_logos						{background: #BA8553;
+													height: 45px;
+													display: flex;
+													justify-content: center;}
+
+
+.mobile_menu_nav .mobile_logos a  					{margin-top: 0;}
+
+
+.mobile_menu_nav .mobile_logos a:hover				{color: #BDA165;}
+
+
+
+
+
+.mobile_menu_nav button								{width: 100%;
+													height: 45px;
+													border: none;
+													border-bottom: 1px solid grey;
+													display: flex;
+													justify-content: flex-start;
+													align-items: center;
+													cursor: pointer;}
+
+
+
+.mobile_menu_nav button p  							{margin-left: 3%;
+													font-size: 1.2rem;
+													font-weight: bold;
+													color: #581C20;}
+
+
+.mobile_menu_nav button h2 							{margin: 0;
+													margin-left: 4%;
+													font-weight: bold;
+													font-size: 1.2rem;
+													color: #4A4F4F;
+													font-family: default;}
+
+
+.mobile_menu_nav a 									{margin-left: 6%;
+													text-decoration: none;
+													height: 45px;
+													width: 100%;
+													margin-top: 0;
+													color: black;
+													font-weight: bold;
+													display: flex;
+													align-items: center;
+													font-size: 1rem;}
+
+
+.mobile_menu_nav a:hover							{color: #581C20;}
+
+
+
+/*Start of Login Naviagtion*/
+.mobile_login_nav									{height: 200px;
+													width: 85%;
+													left: 7.5%;
+													top: 75px;
+													position: absolute;
+													z-index: 2;
+													background: white;
+													overflow: hidden;
+													display: none;
+													padding: 20px;
+													box-sizing: border-box;}
+
+.mobile_login_nav h2 								{color: #BA8553;
+													font-size: 1.1rem;
+													font-weight: bold;}
+
+
+.mobile_login_nav a  								{color: #581C20;
+													font-size: 0.9rem;
+													margin-top: 20px;
+													margin-bottom: 20px;
+													font-weight: bold;
+													text-decoration: none;
+													display: flex;
+													align-items: center;}
+
+
+/*Styling of Content2*/
+
+
+
+/*Styling of Table*/
+
+.table_text											{height: 70px;
+													background: #BA8553;
+													display: flex;
+													align-items: center;
+													margin-top: 4%;}
+
+.table_text p  										{font-family: sans-serif;
+													font-size: 1.1rem;
+													margin-left: 2%;}
+
+.table1 .table2 									{border-collapse: collapse;
+													width: 100%;
+													text-align: center;}
+
+.table1 .table2 thead 								{background: #7E7E7E;
+													height: 80px;
+													font-size: 0.8rem;
+													color: white;
+													font-family: sans-serif;
+													margin: 0;
+													font-weight: bold;}
+
+
+.table1 .table2 thead tr th  						{padding-left: 10px;
+													padding-left: 10px;
+													padding-top: 10px;
+													padding-bottom: 10px;
+													box-sizing: border-box;
+													margin: 0;}
+
+
+.table1 .table2 tbody tr td							{width: 50px;
+													font-family: sans-serif;
+													font-size: 0.8rem;
+													color: #4A4F4F;}
+
+
+.table2 tbody tr  									{height: 70px;}
+
+
+.table2 tbody tr:nth-of-type(even)					{background: white;
+													height: 60px;}
+
+
+.table2 tbody tr:nth-of-type(odd)					{background: #F8F3ED;
+													height: 80px;}
+
+
+.table2 tbody tr:nth-of-type(3)						{border-bottom: 3px solid #7E7E7E;}
+
+/*End of Table*/
+
+
+
+.content2 h1 										{color: #4A4F4F;
+													font-family: sans-serif;}
+
+
+.content2 p 										{color: #4A4F4F;
+													font-family: sans-serif;}
+
+
+.content2 h2 										{color: #1A4C5A;
+													font-family: sans-serif;
+													margin-top: 3%;}
+
+.content2 ul  										{list-style: none;
+													margin-top: 3%;
+													margin-left: -8%;}
+
+
+.content2 ul li  									{font-family: sans-serif;
+													color: #4A4F4F;
+													margin-top: 1%;}
+
+.content2 ul span  									{color: #BA8553;
+													font-size: 1.3rem;}
+
+
+
+
+.main												{background: rgba(26, 76, 90, .8);
+													padding-top: 15%;
+													padding-bottom: 8%;
+													padding-left: 3%;
+													padding-right: 3%;}
+
+.main .main_cont									{padding-left: 8%;}
+
+
+.main  .main_cont 									{display: flex;
+													flex-direction: column;}
+
+
+.main  .main_cont .main1 .main1i					{text-align: left;}
+
+
+.main_cont .main1 .main1i section					{display: flex;
+													flex-direction: column;}
+
+
+#financial  										{width: 170px;
+													height: 35px;
+													border: 1px solid #EAF7FE;
+													display: flex;
+													justify-content: center;
+													align-items: center;
+													text-decoration: none;
+													transition: 0.5s; background: ;
+													transition: 0.5s; color: #EAF7FE;
+													font-weight: bold;
+													font-family: sans-serif;
+													padding: 5px;
+													margin-left: 0px;}
+
+
+#news		 										{width: 120px;
+													height: 35px;
+													border: 1px solid #EAF7FE;
+													display: flex;
+													justify-content: center;
+													align-items: center;
+													text-decoration: none;
+													transition: 0.5s; background: ;
+													transition: 0.5s; color: #EAF7FE;
+													font-weight: bold;
+													font-family: sans-serif;
+													padding: 5px;
+													margin-left: 0px;
+													margin-top: 4%;}	
+
+
+
+/*End of Main*/
+
+
+/*Start of Second Main*/
+
+.second_main										{display: flex;
+													flex-direction: column;
+													padding-top: 3%;
+													justify-content: center;
+													padding-bottom: 3%;
+													padding-left: 0;
+													padding-right: 0;}
+
+
+.second_main .second_main1							{display: flex;
+													flex-direction: column;
+													justify-content: center;
+													align-items: center;
+													padding-left: 0;
+													padding-right: 0;}
+
+
+
+.second_main .second_main2							{display: flex;
+													flex-direction: column;
+													justify-content: center;
+													align-items: center;
+													padding-left: 0;
+													padding-right: 0;}
+
+
+.second_main .second_main3							{display: flex;
+													flex-direction: column;
+													justify-content: center;
+													align-items: center;
+													padding-left: 0;
+													padding-right: 0;}
+
+
+
+.second_main .second_main4							{display: flex;
+													flex-direction: column;
+													justify-content: center;
+													align-items: center;
+													padding-left: 0;
+													padding-right: 0;
+													text-align: center;}
+
+
+
+.second_main .second_main4 a 						{width: 180px;
+													height: 35px;
+													border: 1px solid #581C20;
+													display: flex;
+													justify-content: center;
+													align-items: center;
+													text-decoration: none;
+													transition: 0.5s; background: ;
+													transition: 0.5s; color: #581C20;
+													font-weight: bold;
+													font-family: sans-serif;
+													padding: 5px;
+													margin-left: 0px;}

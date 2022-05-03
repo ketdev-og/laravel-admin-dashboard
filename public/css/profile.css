@@ -1,73 +1,128 @@
-.pro_con{
+.pro_con {
     margin-top: 4rem;
 }
-.pro_con .edit_profile a{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+
+.pro_con .edit_profile .edit {
     text-decoration: none;
     color: var(--primary);
+    padding: 0 0.6rem;
 }
-.pro_con .edit_profile a span{
+
+.pro_con .edit_profile {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.pro_con .edit_profile a span {
     margin: 0 0.1rem;
 }
-.pro_h{
+
+.pro_h {
     display: flex;
 }
-.pro_h .pro_img{
-    
+
+.pro_h .pro_img {
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pro_h .pro_img img{
+
+.pro_h .pro_img img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
 
-.pro_h .pro_h_detail{
+.pro_h .pro_h_detail {
     display: flex;
     justify-content: center;
     flex-grow: 1;
     flex-direction: column;
     padding-left: 1.6rem;
 }
-.pro_h .pro_h_detail .pro_name{
+
+.pro_h .pro_h_detail .pro_name {
     font-weight: bold;
     color: var(--primary);
 }
-.pro_h .pro_h_detail .pro_address{
+
+.pro_h .pro_h_detail .pro_address {
     color: var(--secondary);
     font-size: 0.8rem;
     margin-top: 0.4rem;
 }
-.pro_h .is_active{
+
+.pro_h .is_active {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pro_h .is_active span:first-child{
-   color: var(--primary);
-   font-size: 1rem;
-   margin: 0 0.2rem;
+
+.pro_h .is_active span:first-child {
+    color: var(--primary);
+    font-size: 1rem;
+    margin: 0 0.2rem;
 }
-.pro_h .is_active span:nth-child(2){
+
+.pro_h .is_active span:nth-child(2) {
     color: var(--primary_l);
     font-size: 1rem;
- }
-
- @media only screen and (max-width: 673px) {
-   .pro_h{
-       flex-direction: column;
-       margin-top: 2rem;
-   }
-   .pro_h .pro_h_detail{
-    justify-content: center;
-    align-items: center;
-    margin:1rem 0;
-    padding-left: 0;
-}
 }
 
+.pro_btn {
+    display: flex;
+    justify-content: flex-end;
+}
 
+.pro_btn a {
+    padding: 0.4rem 1rem;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 0.6rem;
+    margin: 0 0.4rem;
+    border-radius: 5px;
+    transition: all 500ms ease-in;
+}
+
+.pro_btn form .act {
+    background-color: var(--primary_l);
+}
+
+
+.pro_btn form .act:hover {
+    background-color: var(--primary);
+}
+
+.pro_btn form .del {
+    background-color: var(--secondary);
+}
+
+
+.pro_btn form .del:hover {
+    background-color: #4d4c4c;
+}
+
+@media only screen and (max-width: 673px) {
+    .pro_h {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .pro_h .pro_h_detail {
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+        padding-left: 0;
+    }
+    .pro_con .edit_profile, .pro_con .edit_profile .pro_btn{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pro_btn form{
+        margin: 0.4rem 0;
+    }
+}

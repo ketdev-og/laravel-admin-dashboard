@@ -1,0 +1,173 @@
+body												{margin: 0;
+													padding: 0;}
+
+
+html												{scroll-behavior: smooth;}
+
+
+::placeholder										{color: #581C20;
+													font-family: sans-serif;
+													font-weight: bold;
+													opacity: 50%;}
+
+/*Styling of The Wrapper*/
+.wrapper  											{background-image: url('other/loginimg2.jpg');
+													width: 100%;
+													background-repeat: no-repeat;
+													background-size: cover;
+													display: flex;
+													justify-content: center;
+													align-items: center;
+													padding-top: 2%;
+													padding-bottom: 3%;}
+
+
+/*End of Wrapper*/
+
+
+
+/*Start of Login_Content*/
+.wrapper .login_content								{width: 70%;
+													background: ;
+													display: flex;
+													height: 100vh;
+													background: ;
+													justify-content: center;
+													align-items: center;
+													flex-direction: column;
+													margin-left: auto;
+													margin-right: auto;}
+
+
+.login_content .login_main							{width: 50%;
+													margin-left: 0;}
+
+
+
+.login_content .login_main label					{font-family: sans-serif;
+													font-weight: bold;
+													color: #581C20;
+													margin-right: 10%;}
+
+
+#submit_me											{width: 120px;
+													transition: 0.5s; background: #5A282A;
+													transition: 0.5s; color: white;
+													height: 40px;
+													font-family: sans-serif;
+													font-weight: bold;
+													border: none;
+													display: flex;
+													justify-content: center;
+													align-items: center;
+													padding-top: 10px;
+													padding-bottom: 10px;
+													cursor: pointer;
+													margin-top: 10%;}
+
+
+#submit_me:hover									{transition: 0.5s; background: white;
+													transition: 0.5s; color: #581C20;}
+
+
+.login_content .login_main input					{height: 35px;
+													width: 50%;
+													margin-top: 2%;
+													border: none;
+													border-radius: 5px;
+													color: #581C20;
+													font-weight: bold;
+													font-family: sans-serif;
+													padding-left: 2%;}
+
+
+
+.login_content .login_main input:focus				{outline: none;}
+
+
+.login_main	.form1:not(:last-child)					{margin-top: 6%;}
+
+
+/*End of Login Content*/
+
+
+
+.login_main1 										{height: ;
+													background: white;
+													border-radius: 10px;
+													padding-top: 15px;
+													padding-bottom: 15px;
+													padding-left: 15px;
+													padding-right: 15px;
+													margin-top: 5%;}
+
+
+.login_main .create_acount							{display: flex;
+													width: 100%;}
+
+
+.create_acount										{}
+
+
+.create_acount p 									{font-family: sans-serif;
+													color: #696C68;
+													font-weight: bold;
+													font-size: 1.1rem;
+													display: flex;
+													justify-content: center;
+													align-items: center;}
+
+
+.create_acount p a 									{text-decoration: none;
+													transition: 0.5s;color: #5A282A;
+													font-size: 1.5rem;
+													display: flex;
+													font-weight: lighter;
+													justify-content: center;
+													align-items: center;
+													height: 30px;
+													width: 230px;
+													transition: 0.5s;background: white;
+													border: 1px solid #5A282A;
+													border-radius: 5px;}
+
+
+.create_acount p a:hover							{transition: 0.5s;background: #5A282A;
+													transition: 0.5s; color: white;}
+
+/*Start of Forgot Password*/
+.forgot_password 									{display: flex;
+													flex-direction: column;}
+
+.forgot_password p 									{margin-top: 0;
+													color: #696C68;
+													font-family: sans-serif;}
+
+
+.forgot_password ul 								{margin-top: 0;}
+
+.forgot_password ul li 								{color: #696C68;
+													font-family: sans-serif;}
+
+
+.forgot_password small:not(:last-child)				{margin-top: -2%;}
+
+.forgot_password small								{color: #696C68;
+													font-family: sans-serif;}
+
+
+.forgot_password a  								{text-decoration: none;
+													color: #5A282A;}
+
+
+/*Styling of Footer*/
+.footer 											{height: 60px;
+													width: 100%;
+													display: flex;
+													background: #5A282A;
+													justify-content: center;
+													align-items: center;}
+
+
+.footer p 											{font-family: sans-serif;
+													color: white;}

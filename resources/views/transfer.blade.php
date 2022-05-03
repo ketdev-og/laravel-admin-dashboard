@@ -8,41 +8,45 @@
         <span>Funds Transfer</span>
     </div>
     
+    <x-auth-validation-errors class="mb-4" :errors="$errors" />
+    <x-auth-session-status class="mb-4" :status="session('message')" />
+    
+    <form action="{{route('transfer_m')}}" method="POST">
+        @csrf
         <div class="tr_inputs">
             <div class="td_input">
                 <label for="">From Account *</label>
-                <input type="text" name="" id="" placeholder="Milo - 0089678790 - [€928230]">
+                <input type="text" name="from_acc" id="">
             </div>
             <div class="td_input">
                 <label for="">Recipient Bank Name *</label>
-                <input type="text" name="" id="" placeholder="e.g SunTrust Bank">
+                <input type="text" name="recp_bank_name" id="">
             </div>
             <div class="td_input">
                 <label for="">Account Name *</label>
-                <input type="text" name="" id="" placeholder="e.g JohnSon Peters">
+                <input type="text" name="acc_name" id="">
             </div>
+            
             <div class="td_input">
                 <label for="">IBAN *</label>
-                <input type="text" name="" id="" placeholder="e.g 245354254">
+                <input type="text" name="iban" id="" >
             </div>
             <div class="td_input">
                 <label for="">BIC/ Swift Code *</label>
-                <input type="text" name="" id="" placeholder="e.g STNRUS3A">
+                <input type="text" name="swiftcode" id="" >
             </div>
             <div class="td_input">
                 <label for="">Amount *</label>
-                <input type="text" name="" id="" placeholder="30000">
+                <input type="text" name="amount" id="">
             </div>
             <div class="td_input">
-                <label for="">Message *</label>
-                <textarea type="text" name="" id="" placeholder="purchase upfront"></textarea> 
-            </div>
-            <div class="td_input">
-                <label for="">Date *</label>
-                <input type="text" name="" id="" placeholder="2022/09/04">
+                <label for="">Message</label>
+                <textarea type="text" name="message" id=""></textarea> 
             </div>
         </div>
         <div class="tr_btn">
-            <a href="">Make Transfer</a>
+            <input type="submit" value="submit">
         </div>
+
+    </form>
 @endsection

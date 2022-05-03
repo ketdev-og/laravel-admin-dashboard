@@ -19,22 +19,16 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach ($transfer as $tran)
                 <tr>
-                    <td>2022-04-04 15:16:30</td>
-                    <td>3950</td>
-                    <td>FI35 5780 0720 5263 62 - Anna Turko</td>
-                    <td>OP bank</td>
-                    <td>Savings</td>
+                    <td>{{$tran->created_at}}</td>
+                    <td>{{$tran->amount}}</td>
+                    <td>{{$tran->acc_name}}</td>
+                    <td>{{$tran->recp_bank_name}}</td>
+                    <td>{{$tran->from_acc}}</td>
                     <td>Successful</td>
                 </tr>
-                <tr>
-                    <td>2022-04-04 15:16:30</td>
-                    <td>3950</td>
-                    <td>FI35 562 - Anna Turko</td>
-                    <td>Ojjs bank</td>
-                    <td>Savings</td>
-                    <td>Successful</td>
-                </tr>
+                @endforeach
             </tbody>
     </table>
 </div>

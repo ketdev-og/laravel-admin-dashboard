@@ -1,8 +1,8 @@
 :root {
-    --primary: #036159;
-    --primary_l: #03615975;
-    --secondary: #8d8b8b;
-    --secondary_l: #d6d6d650;
+    --primary: #581C20;
+    --primary_l: #581c207a;
+    --secondary: #b07a47;
+    --secondary_l: #b07a4796;
 }
 
 * {
@@ -129,7 +129,7 @@ main {
 .tl_bal {
     display: flex;
     flex-direction: column;
-    background-color: var(--primary_l);
+    background-color: var(--primary);
     justify-content: center;
     align-items: center;
     color: white;
@@ -157,6 +157,7 @@ main {
 .tl_bal .name,
 .tl_bal_2 .name {
     margin-top: 1rem;
+    text-align: center;
 }
 
 .contents .detail {
